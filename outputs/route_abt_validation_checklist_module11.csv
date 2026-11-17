@@ -1,0 +1,9 @@
+check,result,status,notes
+Duplicate route keys (origin + dest),0.0,Pass,Each route appears once
+"Missing key values (origin, dest)",0.0,Pass,Every row has both key values
+Missing ABT cells (all columns),25.0,REVIEW,"Review missing cells, especially destination airport information."
+"Nonpositive flight counts, distances and air times",0.0,PASS,Check for invalid nonpositive values.
+Routes with a negative max_arr_delay,4.0,REVIEW,Negative maximum delays are retained; all identified routes have one flight.
+Missing target values (avg_arr_delay),1.0,REVIEW,Missing target values are excluded from the average calculation.
+ABT columns without a dictionary row,0.0,PASS,All ABT columns should have dictionary entries.
+Blank data dictionary cells,0.0,PASS,Complete all documentation fields before handoff.
